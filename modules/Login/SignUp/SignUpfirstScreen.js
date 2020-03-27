@@ -30,7 +30,7 @@ export default class LoginScreen extends Component {
         <View style={styles.signUpInnerContainer}>
           <Text style={styles.headerText}> Welcome </Text>
 
-          <Text style={styles.signInText}> Sign in to continue </Text>
+          <Text style={styles.signInText}> Add Images</Text>
           <View style={styles.inputContainer}>
             <TouchableOpacity
               style={styles.profilePhotoTake}
@@ -78,8 +78,7 @@ export default class LoginScreen extends Component {
               </ImageBackground>
             </TouchableOpacity>
           </View>
-          <View style={styles.buttonContainer}>
-            <Text style={styles.bottomSignIn}>Sign Up</Text>
+          <View style={styles.buttonContainerImageI}>
             <TouchableOpacity
               onPress={() => this.props.navigation.navigate('SignUp2')}>
               <LinearGradient

@@ -36,6 +36,8 @@ target 'SalonApp' do
 
   pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
 
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+
   target 'SalonAppTests' do
     inherit! :search_paths
     # Pods for testing

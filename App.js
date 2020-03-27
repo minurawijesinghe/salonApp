@@ -9,6 +9,7 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import MapScreen from './modules/Login/Maps/mapScreen';
+import SignUp3 from './modules/Login/SignUp/SignUpThirdScreen';
 
 const Stack = createStackNavigator();
 
@@ -21,13 +22,14 @@ export default class App extends Component {
   render() {
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="OTPVerification"
-        screenOptions={{
-          headerShown:false
-        }}
-        >
-          <Stack.Screen name="Map" component={MapScreen}/>
-          <Stack.Screen name="OTPVerification" component={OTPVerification}/>
+        <Stack.Navigator
+          initialRouteName="Login"
+          screenOptions={{
+            headerShown: false,
+          }}>
+          <Stack.Screen name="SignUp3" component={SignUp3} />
+          <Stack.Screen name="Map" component={MapScreen} />
+          <Stack.Screen name="OTPVerification" component={OTPVerification} />
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="SignUp" component={SignUpScreen} />
           <Stack.Screen name="SignUp1" component={SignUp1} />
@@ -37,5 +39,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({});
